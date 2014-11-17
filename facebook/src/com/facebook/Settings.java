@@ -32,6 +32,7 @@ import com.facebook.internal.AttributionIdentifiers;
 import com.facebook.internal.Utility;
 import com.facebook.internal.Validate;
 import com.facebook.model.GraphObject;
+import com.facebook.FacebookSdkVersion;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -459,8 +460,17 @@ public final class Settings {
      *
      * @return the current version of the SDK
      */
-    public static String getSdkVersion() {
+    public static String getSDKVersion() {
         return FacebookSdkVersion.BUILD;
+    }
+
+    /**
+     * Sets the current version of the Facebook SDK for Android as a string.
+     *
+    * @param version   Used to set the current version of the Facebook SDK.
+     */
+    public static void setSDKVersion(String version) {
+        FacebookSdkVersion.BUILD = version;
     }
 
     /**

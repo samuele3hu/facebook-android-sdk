@@ -17,5 +17,5 @@
 package com.facebook;
 
 final class FacebookSdkVersion {
-    public static final String BUILD = "3.18.0";
+    public static String BUILD = "3.18.0/cocos2d-x-v3.3rc0";
 }
